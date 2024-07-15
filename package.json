@@ -1,0 +1,27 @@
+{
+  "name": "harmoney-monorepo",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install": "npm install --workspaces",
+    "format": "prettier --write \"**/*.{js,json,css}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.12.2",
+    "sweetalert2-react-content": "^5.0.7"
+  }
+}

@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "7a3f6581-c19b-4cd5-9924-5f5e8606481a",
+		"name": "Puppies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33523151"
+	},
+	"item": [
+		{
+			"name": "Pull Puppies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/puppies"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Puppy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Buddy\",\r\n  \"age\": 2,\r\n  \"gender\": \"male\",\r\n  \"isVaccinated\": true,\r\n  \"isNeutered\": true,\r\n  \"size\": \"medium\",\r\n  \"breed\": \"Labrador Retriever\",\r\n  \"traits\": [\"Friendly\", \"Active\"],\r\n  \"photoUrl\": \"https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/puppies"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Puppy Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Buddy\",\r\n  \"age\": 2,\r\n  \"gender\": \"female\",\r\n  \"isVaccinated\": true,\r\n  \"isNeutered\": true,\r\n  \"size\": \"medium\",\r\n  \"breed\": \"Labrador Retriever\",\r\n  \"traits\": [\"Friendly\", \"Active\"],\r\n  \"photoUrl\": \"https://example.com/buddy.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/puppies/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Puppy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Buddy\",\r\n  \"age\": 2,\r\n  \"gender\": \"female\",\r\n  \"isVaccinated\": true,\r\n  \"isNeutered\": true,\r\n  \"size\": \"medium\",\r\n  \"breed\": \"Labrador Retriever\",\r\n  \"traits\": [\"Friendly\", \"Active\"],\r\n  \"photoUrl\": \"https://example.com/buddy.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/puppies/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"me@jadsayo.com\",\r\n    \"password\": \"test1234\",\r\n    \"firstName\": \"Jade\",\r\n    \"lastName\": \"Sayo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"me@jadsayo.com\",\r\n    \"password\": \"test1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Adopt Puppy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"me@jadsayo.com\",\r\n    \"password\": \"test1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3001/api/login"
+			},
+			"response": []
+		}
+	]
+}
